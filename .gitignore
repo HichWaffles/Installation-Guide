@@ -1,0 +1,5 @@
+data/
+**/data/
+*.tar.gz
+*.msi
+*.exe
