@@ -144,6 +144,25 @@ In MongoDB Compass, open `mflix` and confirm each collection (`movies`, `comment
 
 ### 2.1 Install Cassandra 4.1.10
 
+OpenJDK prerequisite (Ubuntu WSL):
+
+1. Install OpenJDK before starting Cassandra:
+
+```bash
+sudo apt update
+sudo apt install -y openjdk-17-jdk
+```
+
+2. Verify Java installation:
+
+```bash
+java -version
+```
+
+Add your verification screenshot here after running `java -version`:
+
+![OpenJDK verify - java version](<screenshots/cassandra/openjdk_verify.png>)
+
 Installer archive:
 
 - `apache-cassandra-4.1.10-bin.tar.gz`
