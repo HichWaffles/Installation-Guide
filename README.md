@@ -195,6 +195,43 @@ cd apache-cassandra-4.1.10/bin
 
 ![Cassandra install - run and keep open](<screenshots/cassandra/install_2 (cd and run leave open).png>)
 
+### 2.1.1 Optional: Run cqlsh with a Python virtual environment
+
+If you prefer to use `cqlsh` directly instead of DataGrip, run these commands in Ubuntu WSL.
+
+1. Go to the Cassandra `bin` directory (same location as `cqlsh`).
+
+```bash
+cd apache-cassandra-4.1.10/bin
+```
+
+2. Create a virtual environment:
+
+```bash
+python3 -m venv cqlsh-env
+```
+
+3. Activate it:
+
+```bash
+source cqlsh-env/bin/activate
+```
+
+4. Install dependencies:
+
+```bash
+pip install six cassandra-driver
+```
+
+5. Run cqlsh without bundled Python packages:
+
+```bash
+CQLSH_NO_BUNDLED=true ./cqlsh
+```
+
+![cqlsh venv setup](<screenshots/cassandra/set up python environment for cqlsh.png>)
+![cqlsh run command](<screenshots/cassandra/run cqlsh.png>)
+
 ### 2.2 Install DataGrip
 
 Installer executable:
